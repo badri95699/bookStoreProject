@@ -23,10 +23,10 @@
             margin: 20px;
         }
         .afterHeader{
-            height: 40px;
+            height: 48px;
             background-color: #222222;
             margin: 20px;
-            margin-top: -20px;
+            margin-top: -30px;
         }
         footer{
             color: white;
@@ -43,7 +43,7 @@
             padding: 30px;
             background-color: white;
         }
-        button{
+        .feedback-button{
             width: 100%;
         }
         summary{
@@ -60,6 +60,14 @@
         body{
             background-color: #CEFCB0;
         }
+        a:visited,a:visited{
+            color: white;
+        }
+        a{
+            float: right;
+            padding-right: 5px;
+            padding: 5px;
+        }
         </style>
 </head>
 <body>
@@ -67,6 +75,11 @@
         Book Showcase: Book 1 Details
     </header>
     <div class="afterHeader">
+        <a href="index.html">
+            <button class="btn btn-primary">
+                Home
+            </button>
+        </a>
     </div>
     <main>
         <div style="font-weight: bold; margin: 10px; font-size: 20px;">
@@ -111,7 +124,7 @@
                     </dd>
                 </dl>
                 <div>
-                    <button class="btn btn-primary">
+                    <button class="btn btn-primary feedback-button">
                         Submit Feedback
                     </button>
                 </div>
