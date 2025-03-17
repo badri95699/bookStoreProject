@@ -43,12 +43,12 @@
 
         @media screen and (max-width: 550px) {
             .image-container {
-                display: grid;
-                grid-template-columns: 12fr;
+                display: flec;
+                flex-direction: column;
             }
         }
 
-        img{
+        img {
             width: 170px;
             border: 1px solid black;
         }
@@ -60,10 +60,6 @@
             text-align: center;
             margin: 40px;
             padding: 20px;
-        }
-
-        main {
-            height: 56vh;
         }
 
         body {
@@ -94,28 +90,26 @@
             </button>
         </a>
     </div>
-    <main>
-        <div style="font-weight: bold; margin: 10px; font-size: 25px;">
-            Explore books
+    <div style="font-weight: bold; margin: 10px; font-size: 25px;">
+        Explore books
+    </div>
+    <div class="image-container">
+        <div>
+            <a href="book1.html" target="_blank">
+                <img src="images/autobiography-of-a-yogi.jpg" alt="">
+            </a>
         </div>
-        <div class="image-container">
-            <div>
-                <a href="book1.html" target="_blank">
-                    <img src="images/autobiography-of-a-yogi.jpg" alt="">
-                </a>
-            </div>
-            <div>
-                <a href="book2.html" target="_blank">
-                    <img src="images/atomic-habits.jpg" alt="">
-                </a>
-            </div>
-            <div>
-                <a href="book3.html" target="_blank">
-                    <img src="images/india-thats-bharat.jpeg" alt="">
-                </a>
-            </div>
+        <div>
+            <a href="book2.html" target="_blank">
+                <img src="images/atomic-habits.jpg" alt="">
+            </a>
         </div>
-    </main>
+        <div>
+            <a href="book3.html" target="_blank">
+                <img src="images/india-thats-bharat.jpeg" alt="">
+            </a>
+        </div>
+    </div>
     <footer>
         <span class="bi bi-c-circle"></span> 2025 Book Showcase | All rights reserved
     </footer>
